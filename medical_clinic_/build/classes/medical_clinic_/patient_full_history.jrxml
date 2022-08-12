@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null"  pageWidth="1400" pageHeight="842" columnWidth="1360" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cf1e6bee-ad9d-41f4-ae12-39392cef397f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="5"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from patient inner join patienreport where patient.patientId=patienreport.patientId;]]>
+	</queryString>
+	<field name="patientId" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="contact_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bloodgroup" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="major_disease" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="symptom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diagnosis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medicine" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="71" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="1376" height="66" forecolor="#000066" backcolor="#00CCFF" uuid="c0688405-f431-44a0-9dc9-9337d0ef94b9"/>
+				<textElement>
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[                                                        Patient Report]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="1110" y="31" width="144" height="20" forecolor="#FFFFFF" uuid="5a9020a4-6f9b-440f-9734-7771cf49d298"/>
+				<textElement textAlignment="Right">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="2" width="100" height="20" backcolor="#00CCFF" uuid="80145614-f38f-4b52-a19b-12f211dded13"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[        ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="2" width="100" height="20" uuid="d11181c4-9992-4ed1-bf7e-ec06f7aae666"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="246" y="2" width="100" height="20" uuid="b5de286d-b5fc-4c30-bb93-23ef5818546d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="2" width="100" height="20" uuid="adfaf067-643b-4726-a4a5-06b255f6b618"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="482" y="2" width="100" height="20" uuid="2e40a87b-357e-44ec-a3ce-1454df92e8c2"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="2" width="100" height="20" uuid="90fcd04b-9335-4daa-b339-41b9bc414198"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Blood Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="722" y="2" width="100" height="20" uuid="469b4ff7-8116-41b6-9597-43fa85c73ab9"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="840" y="2" width="100" height="20" uuid="3325d3bd-101c-4c2b-b71f-1df2a83e7d4a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Major disease]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="972" y="2" width="100" height="20" uuid="dbadccdb-e18f-4440-b82e-2ab4d2635261"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[symptom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1094" y="2" width="100" height="20" uuid="6fdb4fce-982f-41e5-bcf3-5499749101aa"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Diagnosis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1229" y="2" width="100" height="20" uuid="3354a89a-39f5-47e7-8983-ba6aa3687750"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Medicine]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="13" y="14" width="100" height="20" uuid="c8b831e5-052e-4a47-b330-70de8e7ee91b"/>
+				<textFieldExpression><![CDATA[$F{patientId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="14" width="100" height="20" uuid="66134e5c-2ad7-430c-8574-23b277ccabc9"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="14" width="100" height="20" uuid="c868b870-6167-494d-9c8a-d9948b913759"/>
+				<textFieldExpression><![CDATA[$F{contact_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="14" width="100" height="20" uuid="21428c70-1406-4f7c-8908-66c57d8b07e4"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="482" y="14" width="100" height="20" uuid="06af1646-5477-4311-a484-db09b691651c"/>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="604" y="14" width="100" height="20" uuid="86b2ba65-1f46-450a-ab6a-37ad6d2496ea"/>
+				<textFieldExpression><![CDATA[$F{bloodgroup}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="722" y="14" width="100" height="20" uuid="d2fb8b53-675f-434f-8787-7d9a4c44ea44"/>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="840" y="14" width="100" height="20" uuid="fcf1e5dc-ae95-4913-8052-81bf1cbf21b3"/>
+				<textFieldExpression><![CDATA[$F{major_disease}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="962" y="14" width="100" height="20" uuid="35c78930-7498-4fb7-a6cc-9559f1fc191e"/>
+				<textFieldExpression><![CDATA[$F{symptom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1094" y="14" width="100" height="20" uuid="11b52be5-0290-4699-a709-805e5919529c"/>
+				<textFieldExpression><![CDATA[$F{diagnosis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1229" y="14" width="100" height="20" uuid="da2d17c3-a895-46f6-9738-405bb7cf98f7"/>
+				<textFieldExpression><![CDATA[$F{medicine}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="2" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
